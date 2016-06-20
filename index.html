@@ -7,10 +7,85 @@
     <link rel="stylesheet" href="css/styles.css">
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <script src="js/scripts.js"></script>
+    <script src="js/script.js"></script>
     <title>Favorite Things to do</title>
   </head>
   <body>
+    <div  class="container">
+    <form id="questions">
+      <div class="form-group ">
+        <label for="favFood">Let me know your favorite food</label>
+        <input id="favFood" type="text"  class="form-control">
+      </div>
+      <div class="form-group ">
+        <label>What is your favorite animal?</label>
+      <div class="radio"  class="form-control">
+        <label>
+          <input type="radio" name="animal" value="1" >
+            monkey
+        </label>
+      </div>
+
+      <div class="radio"  class="form-control">
+        <label>
+          <input type="radio" name="animal" value="2" >
+          dog
+        </label>
+      </div>
+
+      <div class="radio"  class="form-control">
+        <label>
+          <input type="radio" name="animal" value="3"  >
+          cat
+        </label>
+      </div>
+      <div class="form-group container">
+        <label for="city"> Choose your favorite City</label>
+        <div class="radio">
+        <label>
+          <input type="radio" name="city" value="1">Seattle
+        </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="city" value="2">Los Angeles
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="city" value="3">Tokyo
+          </label>
+        </div>
+      </div>
+
+
+      <div class="form-group">
+        <label>What is your favorite drink?</label>
+        <select  class="form-control" id="favDrink">
+          <option value="1"> Coffee</option>
+          <option value="2"> Soda</option>
+          <option value="3"> Green Tea</option>
+          <option value="4"> Milk</option>
+        </select>
+      </div>
+        <label>What is your favorite color?</label>
+        <select class="form-control" id="favColor">
+
+          <option value="1">Red</option>
+          <option value="2">Blue</option>
+          <option value="3">Green</option>
+          <option value="4">Yellow</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-info">Submit</button>
+    </form>
+    </div>
+    <div>
+      <h1> Hi ! There is your result!</h1>
+      <ul id="results">
+
+      </ul>
+    </div>
 
   </body>
 </html>
