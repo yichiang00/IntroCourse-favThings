@@ -7,6 +7,7 @@ var color;
 var listFavorite;
   $("form#questions").submit(function(event){
     event.preventDefault();
+    $(".selected").remove();
    food = $("#favFood").val();
    animals =$("input:radio[name=animal]:checked").val();
    city=$("input:radio[name=city]:checked").val();
@@ -23,7 +24,7 @@ var listFavorite;
     // $("#results").append("<li>"+secondArray[3]+"</li>");
     // $("#results").append("<li>"+secondArray[4]+"</li>");
     secondArray.forEach(function(i){
-      $("#results").append("<li>"+i+"</li>")
+      $("#results").append("<li class=\"selected\">"+i+"</li>");
     });
   });
 });
